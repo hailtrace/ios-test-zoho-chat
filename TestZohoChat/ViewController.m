@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Mobilisten/Mobilisten.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [ZohoSalesIQ initWithAppKey:@"APP KEY" accessKey:@"ACCESS KEY" completion:^(BOOL completed) { }];
 }
 
 
